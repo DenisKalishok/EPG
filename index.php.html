@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>EPG</title>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/ajaxv.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td style="float: left;display: block;max-height: 395px;overflow-y: scroll;">
+                <?php require_once ('channel_list.php');?>
+            </td>
+            <td style="min-width: 550px;" valign="top" >
+                <?php require_once ('calendar.php');?>
+                <div id="block" >
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="addSchedule">
+    </div>
+</body>
+</html>
+
+
